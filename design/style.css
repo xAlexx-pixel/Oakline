@@ -60,6 +60,7 @@ header{
 
 header h1{
     display: inline-flex;
+    width: 100%;
     align-items: center;
     gap: 0.6rem;
     white-space: nowrap;
@@ -75,8 +76,11 @@ span#Oakline{
     color: black;
     font-size: clamp(1.8rem, 3.2vw, 2.6rem);
     line-height: 1;
-    margin-left: 0.4rem;
+    margin-left: auto;
+    white-space: nowrap;
     flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
  /* Navigation */
@@ -197,7 +201,7 @@ footer{
         width: 100%;
     }
 
-    img{
+    img:not(#Logo){
         width: 100%;
     }
 
